@@ -266,21 +266,21 @@ class _SafetySummaryState extends State<SafetySummary> {
   Future<void> downloadPDF(String userId, String date, int decision) async {
     if (await Permission.storage.request().isGranted) {
       final pr = ProgressDialog(context);
+
       pr.style(
-          progressWidgetAlignment: Alignment.center,
-          message: 'Downloading file...',
-          borderRadius: 10.0,
-          backgroundColor: Colors.white,
-          progressWidget: const LoadingPdf(),
-          elevation: 10.0,
-          insetAnimCurve: Curves.easeInOut,
-          maxProgress: 100.0,
-          progressTextStyle: const TextStyle(
-              color: Colors.black, fontSize: 10.0, fontWeight: FontWeight.w400),
-          messageTextStyle: const TextStyle(
-              color: Colors.black,
-              fontSize: 18.0,
-              fontWeight: FontWeight.w600));
+        progressWidgetAlignment: Alignment.center,
+        message: 'Downloading file...',
+        borderRadius: 10.0,
+        backgroundColor: Colors.white,
+        progressWidget: const LoadingPdf(),
+        elevation: 10.0,
+        insetAnimCurve: Curves.easeInOut,
+        maxProgress: 100.0,
+        progressTextStyle: const TextStyle(
+            color: Colors.black, fontSize: 10.0, fontWeight: FontWeight.w400),
+        messageTextStyle: const TextStyle(
+            color: Colors.black, fontSize: 18.0, fontWeight: FontWeight.w600),
+      );
 
       pr.show();
 
