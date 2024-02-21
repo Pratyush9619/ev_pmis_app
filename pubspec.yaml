@@ -70,10 +70,10 @@ dependencies:
   pdf:
   permission_handler:
   flutter_local_notifications:
-  progress_dialog_null_safe:
+  progress_dialog_null_safe: ^2.0.0
   syncfusion_flutter_core: ^20.4.54
   percent_indicator:
-  flutter_full_pdf_viewer_null_safe:
+  # flutter_full_pdf_viewer_null_safe:
   fl_chart: ^0.62.0
   data_table_2: ^2.4.2
   pie_chart: ^5.4.0
